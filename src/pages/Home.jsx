@@ -140,7 +140,7 @@ export default function Home() {
       top-0 
       right-[40px]
       h-[200px]         /* ← adjust height */
-      w-auto           /* ← keeps proportions */
+      w-auto           /* ← keeps proportionsi */
       object-contain
       overflow-visible
       z-20
