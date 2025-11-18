@@ -20,7 +20,13 @@ export default function Home() {
       {/* ---------------------- Politician Section ---------------------- */}
 
       {isMobile ?
-       <section className="w-full pt-16 px-0 bg-gray-50 " data-theme="light">
+       <section className="w-full pt-16 px-0 bg-gray-50 " data-theme="light"  style={{
+    backgroundImage: `
+      linear-gradient(#d7dccf 0.2px, transparent 0.8px),
+      linear-gradient(90deg, #d7dccf 0.2px, transparent 0.8px)
+    `,
+    backgroundSize: "60px 60px"
+  }}>
   <div className="max-w-9xl mx-auto">
 
     {/* MAIN CONTENT */}
@@ -37,13 +43,13 @@ export default function Home() {
 
           {/* Background */}
           <img
-            src=""
+            src="/crowd.png"
             alt="Crowd gathering"
-            className="w-full h-full object-cover opacity-50"
+            className="w-full h-full object-cover opacity-60"
           />
 
           {/* GRADIENT TEXT */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black to-black/90 flex-col items-center justify-center sm:items-end p-0 sm:p-6">
+          <div className="absolute inset-0 bg-gradient-to-r from-black to-black/80 flex-col items-center justify-center sm:items-end p-0 sm:p-6">
             <h1 className="font-serif text-white text-4xl mt-8 ml-12">People First</h1>
             <h1 className="font-serif text-white text-4xl mt-4 ml-12">Voice of All</h1>
             <h1 className="font-serif text-white text-4xl mt-4 ml-12">Together as One</h1>
@@ -76,7 +82,13 @@ export default function Home() {
 </section>
 
 : 
-<section className="w-full pt-16 pb-8 px-8 bg-gray-50" data-theme="light">
+<section className="w-full pt-16 pb-8 px-8 bg-gray-50" data-theme="light"  style={{
+    backgroundImage: `
+      linear-gradient(#d7dccf 0.2px, transparent 0.8px),
+      linear-gradient(90deg, #d7dccf 0.2px, transparent 0.8px)
+    `,
+    backgroundSize: "60px 60px"
+  }}>
   <div className="max-w-9xl mx-auto">
 
     {/* MAIN CONTENT */}
@@ -99,17 +111,17 @@ export default function Home() {
 
           {/* Background */}
           <img
-            src=""
+            src="/crowd.png"
             alt="Crowd gathering"
-            className="w-full h-full object-cover opacity-50"
+            className="w-full h-full object-cover opacity-90"
           />
 
           {/* TEXT IMG — adjustable */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black to-black/90 flex items-center sm:items-end p-0 sm:p-6">
+          <div className="absolute inset-0 bg-gradient-to-r from-black to-black/70 flex items-center sm:items-end p-0 sm:p-6">
             <img
               src="/header_text.png"
               alt="text"
-              className="max-w-[100px] sm:max-w-[500px] h-auto w-full"
+              className="max-w-[100px] sm:max-w-[650px] h-auto w-full"
             />
           </div>
 
@@ -155,7 +167,8 @@ export default function Home() {
     </div>
 
   </div>
-</section>}
+</section>
+}
      
 
 
