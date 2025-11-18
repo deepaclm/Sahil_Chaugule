@@ -1,0 +1,180 @@
+{
+  "nav": {
+    "name":"Sahil Chaugule",
+    "firstname":"Sahil ",
+    "lastname":"Chaugule",
+    "about": "About",
+    "vision": "Vision",
+    "contact": "Contact"
+  },
+  
+  "testimonials": [
+    {
+      "name": "Rahul Mehta – Youth Volunteer",
+      "text": "You’ve shown that politics can be honest, young, and driven by purpose."
+    },
+    {
+      "name": "Vikram Patel – Local Entrepreneur",
+      "text": "You inspire small businesses like ours to dream bigger with your focus on development."
+    },
+    {
+      "name": "Ravi Kumar – Ward Member",
+      "text": "You lead with clarity and courage, giving hope to an entire generation."
+    },
+    {
+      "name": "Amit Deshmukh – Community Organizer",
+      "text": "Your dedication to people’s needs reminds us what true leadership means."
+    },
+    {
+      "name": "Neel Joshi – Student Leader",
+      "text": "We trust you because you stand with us, not above us — that’s rare in today’s times."
+    }
+  ],
+
+  "slider":"Memorable Moments",
+   "campaign_line": "For every street, every family, and every dream in Mumbai — I stand with you. Together, we will make our ward a model of progress, pride, and people’s power.",
+  "footer": {
+  "tagline": "For the People of Maharashtra",
+  "navigation": "Navigation",
+  "company": "Social Media",
+  "privacy": "Privacy Policy",
+  "terms": "Terms & Conditions",
+  "faq": "FAQ",
+  "copyright": "© 2025 Built by the People of Maharashtra"
+}
+,
+  "preloader_text":"Building a brighter future.\nServing the people with honesty.\nTogether, we rise.",
+  
+  "hero_line1": "People First.",
+  "hero_line2": "Together.",
+  "hero_line3": "Voice of All.",
+  
+  "hero2": "Building a Mumbai that stands for opportunity, inclusivity, and progress — where every dream finds its place and every voice shapes the city’s future.",
+  "farmers": "Empowering every farmer with respect, support, and the strength to shape a self-reliant Maharashtra.",
+  "youth": "Inspiring the youth of Maharashtra to lead with innovation, courage, and a vision for a better tomorrow.",
+  "marquee":{
+    "heading":"Jai Maharashtra",
+    "description":"With the blessings of Balasaheb Thackeray and Anand Dighe Saheb, and under the guidance of Hon. CM Eknath Shinde Saheb and MP Narendra Mehta Saheb, several development works have been completed in Ward No. 11 — Sainathwadi, Chhatrapati Colony, and Airoli. With citizens’ trust and Shiv Sena’s support, I’ve worked on roads, water, drainage, health, and education, along with social and cultural initiatives. I’m proud to share this progress and remain committed to continued public service.",
+    "name":"Sahil Chaugule"
+  },
+  "phive":{
+    "text":"Mumbai",
+    "line":"Mumbai youth are not the future — they are the force shaping today’s Maharashtra."
+
+  },
+  "hero": {
+    "image": "/farmers_en.png"
+  },
+  "about": {
+    "hero_title": "Chaugule",
+    "hero_subtitle": "“Preparing future today.”",
+    "section1": "A journey shaped by people's voices and everyday realities. Every step is guided by the belief that leadership begins with listening and serving first.",
+    "whatido": "What I Do",
+    "section2": "I work to strengthen democracy through dialogue, compassion, and action — building a future rooted in trust, growth, and opportunity for all.",
+    "image":"/en.svg"
+  },
+  "gallery": {
+    "title": "Events & Gallery",
+    "about_section": "About Event",
+    "back_to_gallery": "Back to Gallery",
+    "no_project_data": "No project data found",
+    "back_button": "Go Back",
+    "end_title": "End of Events"
+  },
+   "contact": {
+    "title": "Contact Us",
+    "description": "We value your feedback and concerns. Please fill out the grievance form below or reach us directly.",
+    "address_label": "Office Address",
+    "address": "123 Mumbai Street, Maharashtra, India",
+    "phone_label": "Phone",
+    "email_label": "Email",
+    "form_title": "Submit Your Grievance",
+    "form_description": "Please fill out the following details to help us address your concern effectively.",
+    "form_name": "Your Name",
+    "form_phone": "Your Mobile Number",
+    "form_email": "Your Email (Optional)",
+    "form_address": "Address / Area",
+    "form_type": "Type of Complaint",
+    "form_type_options": {
+      "roads": "Roads",
+      "electricity": "Electricity",
+      "water": "Water",
+      "health": "Health",
+      "other": "Other"
+    },
+    "form_complaint": "Your Complaint / Suggestion",
+    "form_submit": "Submit",
+    "form_submitting": "Submitting",
+    "form_success": "Thank you! Your response has been recorded.",
+    "form_error": "There was an issue submitting your response. Please try again.",
+    "form_url": "https://docs.google.com/forms/d/e/your-google-form-id/viewform?embedded=true"
+  },
+  "event1": {
+    "title": "Women's Day Celebration 2024",
+    "description": "A large Women's Day celebration in Airoli attended by thousands; inaugurated by Hon. CM Eknath Shinde and MLA Uday Samant, focusing on women's empowerment and achievements."
+  },
+  "event2": {
+    "title": "Meeting with State Leadership / Representative",
+    "description": "A formal meeting with state representatives including A.D. Shinde to discuss development initiatives, public outreach and welfare measures for the constituency."
+  },
+  "event3": {
+    "title": "Social Media Summit & Volunteer Meet",
+    "description": "A summit for social media volunteers and outreach teams to train and coordinate digital campaign and community mobilisation efforts."
+  },
+  "event4": {
+    "title": "Blood Donation Camp",
+    "description": "A community blood donation drive organised in Airoli with active participation from citizens and youth groups to support local hospitals."
+  },
+  "event5": {
+    "title": "Sports & Cultural Event – Sainathwadi",
+    "description": "A combined cultural and sports festival in Sainathwadi promoting youth participation, local talent and community unity under local leadership."
+  },
+  "event6": {
+    "title": "Free Medical & Health Camp",
+    "description": "A free health camp providing eye checks, basic screenings and health awareness sessions, assisted by local medical teams and volunteers."
+  },
+  "event7": {
+    "title": "School Kit Distribution Drive",
+    "description": "Distribution of school bags, notebooks and learning materials to hundreds of students as part of education support initiatives."
+  },
+  "event8": {
+    "title": "Auto-Rickshaw Drivers Awareness Program",
+    "description": "Awareness sessions for auto/rickshaw drivers on RTO rules, road safety and government support schemes to improve compliance and safety."
+  },
+  "event9": {
+    "title": "Annabhau Sathe Jayanti – Social Harmony Program",
+    "description": "Events to observe Annabhau Sathe’s birth anniversary with social harmony programs and community participation across the ward."
+  },
+  "event10": {
+    "title": "Independence Day Flag Hoisting & Community Events",
+    "description": "Flag hoisting and cultural programmes held across the area to celebrate Independence Day and strengthen civic spirit."
+  },
+  "event11": {
+    "title": "Dahi Handi Festival 2025 – Sainathwadi",
+    "description": "Dahi Handi celebrations in Sainathwadi (2025) featuring cultural performances, local leaders and active community involvement."
+  },
+  "event12": {
+    "title": "Yuva Sena 'Aplya Dari' Youth Interaction",
+    "description": "Yuva Sena's 'Aplya Dari' outreach where young leaders directly interacted with residents to record concerns and provide assistance."
+  },
+  "event13": {
+    "title": "Road & Infrastructure Inspection – Sector 11 / Sainathwadi",
+    "description": "Inspection and inauguration of road and civic works by local leaders with Navi Mumbai Municipal Corporation to ensure quality and timely completion."
+  },
+  "event14": {
+    "title": "Unveiling of Hon. Eknath Shinde's Portrait",
+    "description": "Ceremonial unveiling of Hon. Eknath Shinde’s portrait attended by party leaders and local officials to mark public recognition."
+  },
+  "event15": {
+    "title": "Inauguration of Internal Sewer Line – Chhatrapati Colony (Sector 11)",
+    "description": "Approval and inauguration of the internal sewerage line project in Chhatrapati Colony, marking the start of implementation works."
+  },
+  "event16": {
+    "title": "Jagadamba Mata & Sevalal Maharaj Idol Installation",
+    "description": "Community-supported installation of Jagadamba Mata and Sevalal Maharaj idols and assistance provided for local temple construction."
+  },
+  "event17": {
+    "title": "Inspection & Repair Orders – Chhatrapati Colony Roads/Drainage",
+    "description": "Inspection of damaged roads and drainage systems in Chhatrapati Colony; repair directives issued and follow-up scheduled with municipal authorities."
+  }
+}

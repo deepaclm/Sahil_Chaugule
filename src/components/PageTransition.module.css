@@ -1,0 +1,38 @@
+.transitionOverlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  z-index: 9999;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.block {
+  flex: 1;
+  height: 100%;
+  background-color: #000; /* default for light theme */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: background-color 0.3s ease;
+}
+
+.logoOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #141414;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.logoContainer {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}

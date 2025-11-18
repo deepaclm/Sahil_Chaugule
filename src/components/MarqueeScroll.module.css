@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Manrope:wght@200..800&display=swap");
+
+.root {
+  --light: #aeaeae;
+  --dark: #000;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light);
+  will-change: background-color;
+}
+
+.hero,
+.outro {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  padding: 2rem;
+  align-content: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark);
+  background-color: var(--light);
+  overflow: hidden;
+  text-align: center;
+  z-index: 1;
+}
+
+/* PNG image layer (above bg-color, below text) */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/mh.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  padding: 30px;
+}
+
+/* Text above image */
+.hero * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive text adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 1.5rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* ---------- OUTRO SECTION (Image Left + Text Right) ---------- */
+.outro {
+  color: var(--dark);
+  background-image: url("../assets/bg_image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+/* Left side image */
+.outro img {
+  flex: 0 0 25%;
+  max-width: 30vw;
+  height: auto;
+  object-fit: contain;
+  margin-left: 50px;
+}
+
+/* Right side stacked text */
+.outro .textContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.outro h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.05rem;
+  margin: 0;
+  width: 90%;
+  color: azure;
+}
+
+
+.outro h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: -0.02rem;
+  text-align: start;
+  margin: 0;
+  width: 90%;
+  
+}
+
+/* ---------- MARQUEE SECTION ---------- */
+.marquee {
+  position: relative;
+  width: 100%;
+  height: 50svh;
+  overflow: hidden;
+}
+
+.marqueeWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-5deg);
+  width: 150%;
+  height: 100%;
+}
+
+.marqueeImages {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-75%, -50%);
+  width: 200%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  will-change: transform;
+}
+
+.marqueeImg {
+  flex: 1;
+  width: 100%;
+  aspect-ratio: 5/3;
+}
+
+.marqueeImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------- HORIZONTAL SCROLL ---------- */
+.horizontalScroll {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.horizontalScrollWrapper {
+  position: relative;
+  width: 300%;
+  height: 100svh;
+  display: flex;
+  will-change: transform;
+}
+
+.horizontalSlide {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.horizontalSlide:not(.horizontalSpacer) {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontalSlide .col:nth-child(1) {
+  flex: 3;
+}
+
+.horizontalSlide .col:nth-child(2) {
+  flex: 2;
+}
+
+.horizontalSlide .col h3 {
+  width: 75%;
+  font-size: 2.25rem;
+  font-weight: 500;
+  letter-spacing: -0.025rem;
+  line-height: 1.125;
+}
+
+.horizontalSlide .col img {
+  width: 75%;
+  height: 75%;
+  object-fit: cover;
+}
+
+/* ---------- RESPONSIVE ---------- */
+/* ---------- RESPONSIVE (mobile) ---------- */
+@media (max-width: 1000px) {
+  .outro {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .outro img {
+    order: 1;
+    max-width: 140px;
+    margin: 0 auto;
+  }
+
+  .outro .textContent {
+    order: 2;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .outro h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .outro h2 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+
+  .marqueeWrapper {
+    width: 300%;
+  }
+
+  .horizontalSlide {
+    padding: 3rem 1rem;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .horizontalSlide .col h3 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}

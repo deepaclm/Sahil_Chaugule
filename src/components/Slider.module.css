@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+.slider {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  overflow: hidden;
+  user-select: none;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+.slideTrack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  will-change: transform;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 350px;
+  height: 500px;
+  margin: 0 20px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.slideImage {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  flex: 1;
+}
+
+.slideImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  will-change: transform;
+  transform: scale(2.25);
+  user-select: none;
+  transition: transform 0.5s ease;
+}
+
+.slideOverlay {
+  position: absolute;
+  bottom: -1.75rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.slide:hover .slideOverlay {
+  opacity: calc(1 - var(--slider-moving, 1));
+}
+
+.projectTitle {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.projectArrow {
+  width: 16px;
+  height: 16px;
+}
+
+.projectArrow svg {
+  stroke: #fff;
+  stroke-width: 2;
+  fill: none;
+}
+
+/* ✅ Mobile-specific adjustments (without touching JS layout logic) */
+@media (max-width: 900px) {
+  .slide {
+    width: 90vw;              /* good width for mobile */
+    height: 80vh;             /* tall enough, not cropped */
+    margin: 0 10px;
+    top: 0;                   /* stop centering */
+    transform: none;          /* remove vertical offset */
+  }
+
+  .slideImage img {
+    transform: scale(1.8);    /* balanced zoom */
+  }
+
+  .slideTrack {
+    height: 100%;             /* JS scroll math intact */
+    align-items: flex-start;  /* align from top */
+  }
+
+  .projectTitle {
+    font-size: 0.9rem;
+  }
+
+  .slideOverlay {
+    bottom: -1rem;
+  }
+}

@@ -1,0 +1,190 @@
+// src/data/galleryData.js
+export const getGalleryData = (t) => [
+  {
+    id: "event-1",
+    index: "01",
+    title: t("event1.title"),
+    image: "/event_images/image4_1.png",
+    description: t("event1.description"),
+    projects: Array.from({ length: 7 }, (_, i) => ({
+      id: `p${i + 1}`,
+      img: `/event_images/image4_${i + 1}.png`,
+    })),
+  },
+  {
+    id: "event-2",
+    index: "02",
+    title: t("event2.title"),
+    image: "/event_images/image5_1.png",
+    description: t("event2.description"),
+    projects: Array.from({ length: 7 }, (_, i) => ({
+      id: `p${i + 1}`,
+      img: `/event_images/image5_${i + 1}.png`,
+    })),
+  },
+  {
+    id: "event-3",
+    index: "03",
+    title: t("event3.title"),
+    image: "/event_images/image6_1.png",
+    description: t("event3.description"),
+    projects: Array.from({ length: 7 }, (_, i) => ({
+      id: `p${i + 1}`,
+      img: `/event_images/image6_${i + 1}.png`,
+    })),
+  },
+  {
+    id: "event-4",
+    index: "04",
+    title: t("event4.title"),
+    image: "/event_images/image7_1.png",
+    description: t("event4.description"),
+    projects: Array.from({ length: 7 }, (_, i) => ({
+      id: `p${i + 1}`,
+      img: `/event_images/image7_${i + 1}.png`,
+    })),
+  },
+  {
+    id: "event-5",
+    index: "05",
+    title: t("event5.title"),
+    image: "/event_images/image8_1.png",
+    description: t("event5.description"),
+    projects: Array.from({ length: 7 }, (_, i) => ({
+      id: `p${i + 1}`,
+      img: `/event_images/image8_${i + 1}.png`,
+    })),
+  },
+  {
+    id: "event-6",
+    index: "06",
+    title: t("event6.title"),
+    image: "/event_images/image9_1.png",
+    description: t("event6.description"),
+    projects: Array.from({ length: 7 }, (_, i) => ({
+      id: `p${i + 1}`,
+      img: `/event_images/image9_${i + 1}.png`,
+    })),
+  },
+  {
+    id: "event-7",
+    index: "07",
+    title: t("event7.title"),
+    image: "/event_images/image10_1.png",
+    description: t("event7.description"),
+    projects: Array.from({ length: 7 }, (_, i) => ({
+      id: `p${i + 1}`,
+      img: `/event_images/image10_${i + 1}.png`,
+    })),
+  },
+  {
+    id: "event-8",
+    index: "08",
+    title: t("event8.title"),
+    image: "/event_images/image11_1.png",
+    description: t("event8.description"),
+    projects: Array.from({ length: 7 }, (_, i) => ({
+      id: `p${i + 1}`,
+      img: `/event_images/image11_${i + 1}.png`,
+    })),
+  },
+  {
+    id: "event-9",
+    index: "09",
+    title: t("event9.title"),
+    image: "/event_images/image12_1.png",
+    description: t("event9.description"),
+    projects: Array.from({ length: 7 }, (_, i) => ({
+      id: `p${i + 1}`,
+      img: `/event_images/image12_${i + 1}.png`,
+    })),
+  },
+  {
+    id: "event-10",
+    index: "10",
+    title: t("event10.title"),
+    image: "/event_images/image13_1.png",
+    description: t("event10.description"),
+    projects: Array.from({ length: 7 }, (_, i) => ({
+      id: `p${i + 1}`,
+      img: `/event_images/image13_${i + 1}.png`,
+    })),
+  },
+  {
+    id: "event-11",
+    index: "11",
+    title: t("event11.title"),
+    image: "/event_images/image14_1.png",
+    description: t("event11.description"),
+    projects: Array.from({ length: 7 }, (_, i) => ({
+      id: `p${i + 1}`,
+      img: `/event_images/image14_${i + 1}.png`,
+    })),
+  },
+  {
+    id: "event-12",
+    index: "12",
+    title: t("event12.title"),
+    image: "/event_images/image15_1.png",
+    description: t("event12.description"),
+    projects: Array.from({ length: 7 }, (_, i) => ({
+      id: `p${i + 1}`,
+      img: `/event_images/image15_${i + 1}.png`,
+    })),
+  },
+  {
+    id: "event-13",
+    index: "13",
+    title: t("event13.title"),
+    image: "/event_images/image16_1.png",
+    description: t("event13.description"),
+    projects: Array.from({ length: 7 }, (_, i) => ({
+      id: `p${i + 1}`,
+      img: `/event_images/image16_${i + 1}.png`,
+    })),
+  },
+  {
+    id: "event-14",
+    index: "14",
+    title: t("event14.title"),
+    image: "/event_images/image17_1.png",
+    description: t("event14.description"),
+    projects: Array.from({ length: 7 }, (_, i) => ({
+      id: `p${i + 1}`,
+      img: `/event_images/image17_${i + 1}.png`,
+    })),
+  },
+  {
+    id: "event-15",
+    index: "15",
+    title: t("event15.title"),
+    image: "/event_images/image18_1.png",
+    description: t("event15.description"),
+    projects: Array.from({ length: 7 }, (_, i) => ({
+      id: `p${i + 1}`,
+      img: `/event_images/image18_${i + 1}.png`,
+    })),
+  },
+  {
+    id: "event-16",
+    index: "16",
+    title: t("event16.title"),
+    image: "/event_images/image19_1.png",
+    description: t("event16.description"),
+    projects: Array.from({ length: 7 }, (_, i) => ({
+      id: `p${i + 1}`,
+      img: `/event_images/image19_${i + 1}.png`,
+    })),
+  },
+  {
+    id: "event-17",
+    index: "17",
+    title: t("event17.title"),
+    image: "/event_images/image20_1.png",
+    description: t("event17.description"),
+    projects: Array.from({ length: 7 }, (_, i) => ({
+      id: `p${i + 1}`,
+      img: `/event_images/image20_${i + 1}.png`,
+    })),
+  },
+];

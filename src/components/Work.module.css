@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300..800&display=swap");
+
+
+
+/* ------------------------------------------------ */
+/* INFINITE CAROUSEL                                */
+/* ------------------------------------------------ */
+.work{
+   background-image: 
+    linear-gradient(#d7dccf 0.2px, transparent 0.8px),
+    linear-gradient(90deg, #d7dccf 0.2px, transparent 0.8px);
+  background-size: 60px 60px; /* spacing of squares */
+
+}
+
+.carouselWrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  
+ 
+  
+}
+
+.carouselTrack {
+  display: flex;
+  width: max-content;
+  animation: slideInfinite 22s linear infinite;
+  height: 70vh;
+  padding: 4rem;
+}
+
+.carouselItem {
+  flex: 0 0 auto;
+  height: 340px;
+  width: auto;
+  margin-right: 4rem;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.carouselItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  box-shadow: #000 0px 4px 10px;
+}
+
+/* Hover effect */
+.carouselItem:hover {
+  transform: translateY(-10px);
+}
+
+/* --- ANIMATION --- */
+@keyframes slideInfinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .carouselItem {
+    width: 250px;
+    height: 250px;
+    margin-right: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carouselItem {
+    width: 180px;
+    height: 180px;
+    margin-right: 1rem;
+  }
+}
+
+.work {
+  padding: 6rem 2rem;
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+/* --- HEADER --- */
+.workHeader {
+  margin: 4rem auto 5rem;
+  max-width: 900px;
+}
+
+.workHeader h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #111;
+  line-height: 1.2;
+}
+
+.workHeader p {
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.8;
+  letter-spacing: 0.2px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+/* --- GRID --- */
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.workItem {
+  flex: 1 1 45%;
+  max-width: 500px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.workItem:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* --- IMAGE --- */
+.workItemImg {
+  width: 100%;
+  overflow: hidden;
+  border: 4px solid #000;
+  background: #fff;
+}
+
+.workItemImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* --- CONTENT --- */
+.workItemCopy {
+  padding: 1.75rem 1.5rem 2rem;
+}
+
+.workItemCopy h3 {
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.workItemCopy p {
+  margin-bottom: 0.3rem;
+  font-size: 1.05rem;
+  color: #444;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* --- BUTTON --- */
+.backBtn {
+  margin-top: 4rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 2.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.backBtn:hover {
+  background: #333;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+  .workHeader h1 {
+    font-size: 2.2rem;
+  }
+
+  .row {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .work {
+    padding: 4rem 1.5rem;
+  }
+
+  .workHeader {
+    margin: 3rem auto 4rem;
+  }
+
+  .workHeader h1 {
+    font-size: 2rem;
+  }
+
+  .workHeader p {
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 95%;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .workItem {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .workItemImg {
+    aspect-ratio: 1 / 1;
+    border-width: 3px;
+  }
+  .backBtn{
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .work {
+    padding: 3rem 1rem;
+  }
+
+  .workHeader h1 {
+    font-size: 1.7rem;
+  }
+
+  .workHeader p {
+    font-size: 0.95rem;
+  }
+
+  .workItemCopy h3 {
+    font-size: 1.1rem;
+  }
+
+  .workItemCopy p {
+    font-size: 0.9rem;
+  }
+
+  .backBtn {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.6rem;
+  }
+   .backBtn{
+    margin-top: 0rem;
+  }
+  .carouselTrack {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  animation: slideInfinite 22s linear infinite;
+  height: 40vh;
+  padding: 0;
+}
+.carouselWrapper{
+  padding: 0;
+}
+}

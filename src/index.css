@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* ensure full-height foundation so hero covers entire viewport */
+:global(html), :global(body) {
+  height: 100%;
+  margin: 0;
+  background-color: var(--dark); /* prevents white flash if image missing */
+}

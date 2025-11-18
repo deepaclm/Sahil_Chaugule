@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+.wrapper {
+  background-color: #1a1a1a;
+  font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
+}
+
+.heading{
+  font-size: clamp(1rem, 4vw, 3rem);
+  font-weight: 800;
+  color: black;
+  margin-top: 4rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* INTRO + OUTRO */
+.intro,
+.outro {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: 
+    linear-gradient(#d7dccf 0.2px, transparent 0.8px),
+    linear-gradient(90deg, #d7dccf 0.2px, transparent 0.8px);
+  background-size: 60px 60px; /* spacing of squares */
+}
+
+/* ====================================================== */
+/*                     STICKY CARD                        */
+/* ====================================================== */
+
+.stickyCard {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  color: #1a1a1a;
+  padding: 3rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  /* 🔥 GRID BACKGROUND */
+  background-image: 
+    linear-gradient(#d7dccf 0.2px, transparent 0.8px),
+    linear-gradient(90deg, #d7dccf 0.2px, transparent 0.8px);
+  background-size: 60px 60px; /* spacing of squares */
+}
+
+
+/* INDEX NUMBER */
+.stickyCardIndex {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  z-index: 5;
+ 
+}
+
+.cardIndexNumber {
+  font-size: clamp(5rem, 8vw, 13rem);
+  font-weight: 800;
+  line-height: 1;
+  color: black;
+  opacity: 70%;
+  
+}
+
+/* ====================================================== */
+/*              FIXED LAYOUT (MAIN CONTENT)               */
+/* ====================================================== */
+
+.stickyCardContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  /* push everything down */
+  align-items: flex-end;
+  padding-bottom: 80px;
+ 
+}
+
+.stickyCardContentWrapper {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 3rem;
+}
+
+/* ---------------- IMAGE SECTION ---------------- */
+.stickyCardImg {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  /* moves image away from index number */
+  margin-left: 18rem;
+  padding: 2rem;
+  margin-top: 18rem;
+}
+
+.stickyCardImg img {
+  width: 100%;
+  object-fit: cover;
+  
+  box-shadow: #1a1a1a 0px 4px 10px;
+}
+
+/* ---------------- TEXT SECTION ---------------- */
+.stickyCardHeader {
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-weight: 800;
+  margin: 0;
+}
+
+/* make heading + subtitle + description stack cleanly */
+.stickyCardCopy {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+/* subtitle */
+.stickyCardCopyTitle p {
+  font-weight: 700;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+/* description */
+.stickyCardCopyDescription p {
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.9;
+  margin-top: 2rem;
+}
+
+/* ====================================================== */
+/* OVERLAY FOR GSAP */
+/* ====================================================== */
+
+.stickyCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: var(--after-opacity, 0);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ====================================================== */
+/* RESPONSIVE */
+/* ====================================================== */
+/* ====================================================== */
+/* RESPONSIVE (UPDATED — DESKTOP UNTOUCHED)               */
+/* ====================================================== */
+
+@media (max-width: 1000px) {
+
+  .stickyCard {
+    padding: 1.5rem;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .stickyCardIndex {
+    top: 1rem;
+    left: 1.5rem;
+  }
+
+  .cardIndexNumber {
+    font-size: clamp(4rem, 15vw, 8rem);
+    opacity: 0.15;
+  }
+
+  /* Main wrapper goes vertical */
+  .stickyCardContentWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    height: auto;
+    padding-top: 5rem; /* lets index float naturally */
+    margin-top: 2rem;
+  }
+
+  /* IMAGE → full width */
+  .stickyCardImg {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .stickyCardImg img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+
+  /* TEXT STACKS CLEANLY */
+  .stickyCardHeader {
+    font-size: 1.9rem;
+    margin-top: 1rem;
+  }
+
+  .stickyCardCopy {
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .stickyCardCopyDescription p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .stickyCard {
+    padding: 2rem;
+  }
+
+  .stickyCardIndex {
+    top: 0.8rem;
+    left: 1rem;
+  }
+
+  .cardIndexNumber {
+    font-size: clamp(3rem, 20vw, 6rem);
+    
+    color: #1a1a1a;
+  }
+
+  .stickyCardHeader {
+    font-size: 1.6rem;
+  }
+
+  .stickyCardCopyDescription p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-top: 2rem;
+  }
+}
