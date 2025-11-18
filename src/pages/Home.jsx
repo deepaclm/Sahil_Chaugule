@@ -38,7 +38,7 @@ export default function Home() {
         {/* HEADER */}
         
 
-        {/* GRADIENT SECTION */}
+        {/* GRADIENT SECTIONs */}
         <div className="relative flex-1 overflow-hidden h-[80vh]">
 
           {/* Background */}
