@@ -33,13 +33,13 @@ export default function Home() {
     <div className="flex flex-col lg:flex-row w-full">
 
       {/* LEFT SECTION — 100vh */}
-      <div className="w-full lg:w-2/3 h-[100vh] flex flex-col relative z-10">
+      <div className="w-full lg:w-2/3 h-[85vh] flex flex-col relative z-10">
 
         {/* HEADER */}
         
 
         {/* GRADIENT SECTION */}
-        <div className="relative flex-1 overflow-hidden h-[100vh]">
+        <div className="relative flex-1 overflow-hidden h-[80vh]">
 
           {/* Background */}
           <img
@@ -65,7 +65,7 @@ export default function Home() {
               left-1/2
               -translate-x-1/2
               h-[40vh]            /* 50% of the 100vh gradient container */
-              max-h-[300px]       /* safety cap for large phones */
+              max-h-[250px]       /* safety cap for large phones */
               w-auto
               object-contain
               overflow-visible
