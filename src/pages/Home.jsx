@@ -82,7 +82,7 @@ export default function Home() {
 </section>
 
 : 
-<section className="w-full pt-16 pb-8 px-8 bg-gray-50" data-theme="light"  style={{
+<section className="w-full pt-16 pb-8 pl-8 bg-gray-50" data-theme="light"  style={{
     backgroundImage: `
       linear-gradient(#d7dccf 0.2px, transparent 0.8px),
       linear-gradient(90deg, #d7dccf 0.2px, transparent 0.8px)
