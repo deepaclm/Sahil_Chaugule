@@ -129,7 +129,7 @@ export default function Home() {
       </div>
 
       {/* RIGHT SECTION — full 90vh */}
-     <div className="w-full lg:w-1/3 h-[100vh] relative overflow-visible">
+     <div className="w-full lg:w-1/3 h-[100vh] relative overflow-visible isolation-auto">
 
   {/* MAIN overlay image — adjustable size */}
   <img
