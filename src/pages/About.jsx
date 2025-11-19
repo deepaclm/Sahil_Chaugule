@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation();
   return (
     <div className="w-full flex flex-col overflow-hidden">
 
@@ -31,7 +33,7 @@ export default function About() {
 
   {/* IMAGE ABOVE LINES */}
   <img
-    src="/about_hi.png"
+    src={t("about.hero")}
     alt=""
     className="w-[80vw] sm:w-[30vw] max-w-[90vw] sm:max-w-[30vw] relative z-5"
   />
@@ -48,9 +50,10 @@ export default function About() {
     className="
       absolute right-2 sm:right-48 top-0
       w-[2px] h-full
-      bg-gray-600
+      bg-gray-300
       -z-50
       opacity-50
+      hidden sm:block
     "
   ></div>
 
@@ -73,16 +76,11 @@ export default function About() {
     </div>
 
     {/* text */}
-    <div className="w-full max-w-6xl flex flex-col items-center text-center my-4">
+    <div className="w-full max-w-6xl flex flex-col items-center text-center my-4 pr-0  sm:pr-32">
       <h2 className="text-3xl sm:text-6xl font-serif text-orange-600 leading-none">
         A  
-        <span className="text-gray-800 text-3xl sm:text-5xl leading-none">
-          JOURNEY SHAPES BY PEOPLE’S <br />
-          VOICES AND EVERYDAY <br />
-          REALITIES. <br />
-          EVERY STEP IS GUIDED BY THE BELIEF <br />
-          THAT LEADERSHIP BEGINS WITH LISTENING <br />
-          AND SERVING FIRST.
+        <span className="text-gray-800 text-2xl sm:text-5xl leading-none ">
+          {t("about.section1")}
         </span>
       </h2>
 
@@ -110,9 +108,10 @@ export default function About() {
   className="
     absolute left-0 right-0 top-2/5 sm:bottom-[1050px]
     h-[2px] w-full
-    bg-gray-600
+    bg-gray-300
     -z-50
     opacity-50
+    hidden sm:block
   "
 ></div>
 
@@ -127,7 +126,7 @@ export default function About() {
           leading-tight font-serif
         "
       >
-        WHAT I DO
+        {t("about.whatido")}
       </h1>
 
       <div
@@ -136,10 +135,10 @@ export default function About() {
           leading-snug
           text-[5vw] sm:text-2xl md:text-3xl lg:text-[2.5vw]
           max-w-[650px]
+          
         "
       >
-        I Work To Strengthen Democracy Through Dialogue, Engagement And Action—
-        Building A Future Rooted In Trust, Growth, And Opportunities For All.
+        {t("about.section2")}
       </div>
     </div>
 
@@ -151,7 +150,7 @@ export default function About() {
         className="w-full rounded-3xl object-cover"
       />
       <div className="text-center mt-4 text-sm sm:text-base md:text-lg lg:text-2xl font-serif">
-        Building A Future Root
+       {t("about.hero_subtitle")}
       </div>
     </div>
   </section>

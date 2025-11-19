@@ -67,9 +67,7 @@ const StickyCards = () => {
       <section className={styles.intro} data-theme="light">
 
   <h3 className={styles.heading}>
-    आमच्या ध्येयाला तुमच्या जवळ  
-    <br />
-    आणणाऱ्या कथा आणि क्षण.
+    {t("gallery.about_section")}
   </h3>
 
   {/* STACKED IMAGES */}
@@ -109,12 +107,12 @@ const StickyCards = () => {
   </div>
 
   {/* TITLE IMAGE */}
-  <div className="mt-6 flex justify-center">
+  <div className="mt-6 w-[90vw] sm:w-[60vw] flex justify-center">
     <img
-      src="/gallery_title_mr.png"
+      src={t("gallery.title")}
       alt=""
       className="
-        w-[240px] sm:w-[280px] md:w-[320px] 
+        w-full 
         opacity-95
       "
     />

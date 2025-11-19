@@ -46,12 +46,12 @@ export default function Contact() {
   return (
     <section className="bg-[#fff] text-black py-16 px-4 sm:px-6 lg:px-10" data-theme="light">
       
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch mt-10 sm:mt-16">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch mt-12 sm:mt-16">
         
         {/* Left Section */}
-        <div className="flex flex-col justify-between rounded-2xl overflow-hidden">
+        <div className="flex flex-col justify-between rounded-2xl overflow-visible">
 
-          <div className="p-4 sm:p-6 lg:p-8 flex flex-col justify-start flex-1">
+          <div className="p-4 p-4 flex flex-col justify-start flex-1 overflow-visible">
             <SplitText
               text={t("contact.title")}
               className="
@@ -59,8 +59,9 @@ export default function Contact() {
                 mt-0
                 justify-center
                 ml-6 sm:ml-0
+                overflow-visible
                 text-5xl sm:text-7xl md:text-8xl
-                font-zentry leading-normal font-extrabold special-font text-black
+                font-serif leading-tight font-extrabold special-font text-black
                 transition-all duration-500 ease-in-out
                 hover:tracking-wider hover:scale-y-105 hover:drop-shadow-sm
               "

@@ -7,6 +7,7 @@
     "vision": "Vision",
     "contact": "Contact"
   },
+  "jai_maharashtra_text":"/JaiMaharashtra_en.png",
   
   "testimonials": [
     {
@@ -33,28 +34,45 @@
 
   "slider":"Memorable Moments",
    "campaign_line": "For every street, every family, and every dream in Mumbai — I stand with you. Together, we will make our ward a model of progress, pride, and people’s power.",
+  
   "footer": {
-  "tagline": "For the People of Maharashtra",
-  "navigation": "Navigation",
-  "company": "Social Media",
-  "privacy": "Privacy Policy",
-  "terms": "Terms & Conditions",
-  "faq": "FAQ",
-  "copyright": "© 2025 Built by the People of Maharashtra"
-}
+    "tagline": "For the People of Maharashtra",
+    "navigation": "Navigation",
+    "company": "Social Media",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "faq": "Frequently Asked Questions",
+
+    "about": "ABOUT US",
+    "vision": "VISION",
+    "contact": "CONTACT",
+
+    "people_first": "People First.",
+    "maharashtra_always": "Maharashtra Always",
+    "lang_available": "Marathi Available",
+    "your_trust": "Your Trust Is My Strength",
+    "committed_dev": "Committed to Development",
+
+    "copyright": "© 2025 Built by the People of Maharashtra"
+  }
+
+
 ,
   "preloader_text":"Building a brighter future.\nServing the people with honesty.\nTogether, we rise.",
   
   "hero_line1": "People First.",
   "hero_line2": "Together.",
   "hero_line3": "Voice of All.",
+  "hero_sahil":"/SahilChaugule_en.png",
+  "hero_text":"/header_text_en.png",
   
   "hero2": "Building a Mumbai that stands for opportunity, inclusivity, and progress — where every dream finds its place and every voice shapes the city’s future.",
   "farmers": "Empowering every farmer with respect, support, and the strength to shape a self-reliant Maharashtra.",
   "youth": "Inspiring the youth of Maharashtra to lead with innovation, courage, and a vision for a better tomorrow.",
   "marquee":{
     "heading":"Jai Maharashtra",
-    "description":"With the blessings of Balasaheb Thackeray and Anand Dighe Saheb, and under the guidance of Hon. CM Eknath Shinde Saheb and MP Narendra Mehta Saheb, several development works have been completed in Ward No. 11 — Sainathwadi, Chhatrapati Colony, and Airoli. With citizens’ trust and Shiv Sena’s support, I’ve worked on roads, water, drainage, health, and education, along with social and cultural initiatives. I’m proud to share this progress and remain committed to continued public service.",
+    "description1":"With the blessings of Balasaheb Thackeray and Anand Dighe Saheb, and under the guidance of Hon. CM Eknath Shinde Saheb and MP Narendra Mehta Saheb, several development works have been completed in Ward No. 11 — Sainathwadi, Chhatrapati Colony, and Airoli. ",
+    "description2": "With citizens’ trust and Shiv Sena’s support, I’ve worked on roads, water, drainage, health, and education, along with social and cultural initiatives. I’m proud to share this progress and remain committed to continued public service.",
     "name":"Sahil Chaugule"
   },
   "phive":{
@@ -66,16 +84,17 @@
     "image": "/farmers_en.png"
   },
   "about": {
+    "hero":"/about_en.png",
     "hero_title": "Chaugule",
-    "hero_subtitle": "“Preparing future today.”",
+    "hero_subtitle": "Preparing future today.",
     "section1": "A journey shaped by people's voices and everyday realities. Every step is guided by the belief that leadership begins with listening and serving first.",
     "whatido": "What I Do",
     "section2": "I work to strengthen democracy through dialogue, compassion, and action — building a future rooted in trust, growth, and opportunity for all.",
     "image":"/en.svg"
   },
   "gallery": {
-    "title": "Events & Gallery",
-    "about_section": "About Event",
+    "title": "/gallery_en.png",
+    "about_section": "Stories and moments that bring our mission to you.",
     "back_to_gallery": "Back to Gallery",
     "no_project_data": "No project data found",
     "back_button": "Go Back",

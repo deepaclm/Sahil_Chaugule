@@ -50,9 +50,9 @@ export default function Home() {
 
           {/* GRADIENT TEXT */}
           <div className="absolute inset-0 bg-gradient-to-r from-black to-black/80 flex-col items-center justify-center sm:items-end p-0 sm:p-6">
-            <h1 className="font-serif text-white text-4xl mt-8 ml-12">People First</h1>
-            <h1 className="font-serif text-white text-4xl mt-4 ml-12">Voice of All</h1>
-            <h1 className="font-serif text-white text-4xl mt-4 ml-12">Together as One</h1>
+            <h1 className="font-serif text-white text-4xl mt-8 ml-12">{t("hero_line1")}</h1>
+            <h1 className="font-serif text-white text-4xl mt-4 ml-12">{t("hero_line2")}</h1>
+            <h1 className="font-serif text-white text-4xl mt-4 ml-12">{t("hero_line3")}</h1>
           </div>
 
           {/* MOBILE ONLY IMAGE — same parent as gradient */}
@@ -100,9 +100,9 @@ export default function Home() {
         {/* HEADER on left */}
         <div className="p-4 mb-4">
           <img 
-            src="/header_text_sahil.png" 
+            src={t("hero_sahil")}
             alt="" 
-            className="max-w-[200px] sm:max-w-[500px] w-full"
+            className="max-w-[200px] sm:max-w-[400px] w-full"
           />
         </div>
 
@@ -119,9 +119,9 @@ export default function Home() {
           {/* TEXT IMG — adjustable */}
           <div className="absolute inset-0 bg-gradient-to-r from-black to-black/70 flex items-center sm:items-end p-0 sm:p-6">
             <img
-              src="/header_text.png"
+              src={t("hero_text")}
               alt="text"
-              className="max-w-[100px] sm:max-w-[650px] h-auto w-full"
+              className="max-w-[100px] sm:max-w-[700px] h-auto w-full"
             />
           </div>
 
@@ -184,19 +184,19 @@ export default function Home() {
     <div className="absolute inset-0 z-0 pointer-events-none flex justify-between px-0">
 
   {/* Line 1 — always visible */}
-  <div className="w-[1px] bg-gray-400"></div>
+  <div className="w-[1px] bg-gray-300 hidden sm:block"></div>
 
   {/* Line 2 — always visible */}
-  <div className="w-[1px] bg-gray-400"></div>
+  <div className="w-[1px] bg-gray-300 hidden sm:block"></div>
 
   {/* Line 3 — always visible */}
-  <div className="w-[1px] bg-gray-400"></div>
+  <div className="w-[1px] bg-gray-300 hidden sm:block"></div>
 
   {/* Line 4 — visible only on sm+ */}
-  <div className="w-[1px] bg-gray-400"></div>
+  <div className="w-[1px] bg-gray-300 hidden sm:block "></div>
 
   {/* Line 5 — visible only on sm+ */}
-  <div className="w-[1px] bg-gray-400 hidden sm:block"></div>
+  <div className="w-[1px] bg-gray-300 hidden sm:block"></div>
 
 </div>
 
@@ -221,7 +221,7 @@ export default function Home() {
 
         {/* JAI MAHARASHTRA IMAGE */}
         <img
-          src="/jai_maharashtra.png"
+          src={t("jai_maharashtra_text")}
           alt=""
           className="max-w-[600px] mx-auto relative z-10 p-2"
         />
@@ -231,7 +231,7 @@ export default function Home() {
       <div className="flex items-center justify-center gap-4">
         <div className="flex flex-col mb-4">
           <img
-            src="/header_text_sahil.png"
+            src={t("hero_sahil")}
             alt=""
             className="max-w-[150px] sm:max-w-[300px] w-full"
           />
@@ -275,12 +275,10 @@ export default function Home() {
         <div
           className="
             break-words whitespace-pre-wrap leading-tight text-gray-700 font-medium
-            text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl
+            text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-serif
           "
         >
-          बालसाक्षरकारांणि आनंदविषयार्थयाणाथांधृणिवीडीयिणं
-          मालीणीछांछीणीळाणी चन्द्रसंधिणां अधिहरर अधिपरणां साहिव्यामाङ्गमालीड़यकलिडींके –
-          साइन्च्यमानी छामपरीणिणी आणि जीणीणी आणि पर्वतीय अन्नर्वीणी पाठींने आईअप्राणं
+          {t("marquee.description1")}
         </div>
       </div>
 
@@ -289,13 +287,10 @@ export default function Home() {
         <div
           className="
             break-words whitespace-pre-wrap leading-tight text-gray-700 font-medium
-            text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl
+            text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl font-serif
           "
         >
-          नागरिकांणिबास अधिकिछितलायार्थदशणं
-          येछीणीदलणां परिणां शुभयागारणां मालिणीणां
-          उपद्रवसंदशणी आणि भ्रामरीणीणिणां साइञ्च
-          पाटणीणी सुशणद्रतीणां अनीणिणीणां अनिशणीणी संगणीणी
+          {t("marquee.description2")}
         </div>
       </div>
 
@@ -316,8 +311,8 @@ export default function Home() {
       <div className="w-[1px] bg-transparent"></div>
       <div className="w-[1px] bg-transparent"></div>
       <div className="w-[1px] bg-transparent hidden sm:block"></div>
-      <div className="w-[1px] bg-gray-400"></div>
-      <div className="w-[1px] bg-gray-400"></div>
+      <div className="w-[1px] bg-gray-300 hidden sm:block"></div>
+      <div className="w-[1px] bg-gray-300 hidden sm:block"></div>
     </div>
 
     {/* CONTENT */}
@@ -341,7 +336,7 @@ export default function Home() {
             max-sm:w-[140px] max-sm:h-44 
             overflow-hidden border-2 border-black
           ">
-            <img src="/home5.jpg" alt="" className="w-full h-full object-contain block" />
+            <img src="/home2.jpg" alt="" className="w-full h-full object-contain block" />
           </div>
 
         </div>
@@ -392,14 +387,11 @@ export default function Home() {
       pt-18
       sm:pt-0
       text-base sm:text-lg md:text-2xl lg:text-4xl 
-      font-semibold text-gray-900 leading-relaxed 
+      font-medium text-gray-900 leading-relaxed 
       relative z-20 px-2 sm:px-0
+      font-serif
     ">
-      संधिसमावेशाणिप्रातीसाठीउभा
-      <span className="text-orange-500">असलेलाएकमुंबई</span>
-      – जिथे प्रत्येक स्वमाला स्थान मिळते आणि प्रत्येक आवाज 
-      <span className="text-orange-500">शहराच्या</span>
-      भविष्यत्यालाआकार देतो।
+      {t("hero2")}
     </h2>
 
   </div>
@@ -442,7 +434,7 @@ export default function Home() {
           {/* ROW 3 */}
           <div className="flex gap-4 items-end">
             <img
-  src="/home4.jpg"
+  src="/home5.jpg"
   alt="right-1"
   className="
     object-cover block border-2 border-black bg-gray-300 p-2
@@ -469,8 +461,8 @@ export default function Home() {
 <section className="relative max-w-7xl mx-auto px-6 py-10 md:py-20">
 
   {/* Vertical lines (mobile-friendly positions) */}
-  <div className="absolute top-0 bottom-0 left-10 md:left-20 w-[1px] bg-black -z-10"></div>
-  <div className="absolute top-0 bottom-0 left-32 md:left-60 w-[1px] bg-black -z-10"></div>
+  <div className="absolute top-0 bottom-0 left-10 md:left-20 w-[1px] bg-gray-300 hidden sm:block -z-10"></div>
+  <div className="absolute top-0 bottom-0 left-32 md:left-60 w-[1px] bg-gray-300 hidden sm:block -z-10"></div>
 
   <div className="flex flex-col md:flex-row">
 
@@ -480,29 +472,28 @@ export default function Home() {
         flex flex-col justify-between 
         text-sm md:text-base font-normal text-black
         w-full md:w-1/3 
-        pr-4 md:pr-12 
+        pr-4 md:pr-4 
       "
-      style={{ lineHeight: 2 }}
     >
-      <div className="self-start text-xl md:text-2xl font-normal">
-        साहिल चौगुले
+      <div className="self-start text-xl md:text-2xl font-normal font-serif">
+        {t("nav.name")}
       </div>
 
       <div className="mt-6 md:mt-0">
 
         <h2 className="
           text-xl sm:text-2xl md:text-3xl 
-          mb-10 md:mb-32 
-          ml-6 md:ml-32 
+          mb-10 md:mb-64 
+          ml-6 md:ml-6 font-serif
         ">
-          प्रत्येकशेतकऱ्यालासन्मान आधारस्वात्मनिर्भरमहाराष्ट्र घडवण्याचीताकदडेपणे।
+          {t("farmers")}
         </h2>
 
         <h2 className="
           text-xl sm:text-2xl md:text-3xl 
-          ml-0 md:ml-32
+          ml-0 md:ml-6 font-serif
         ">
-          महाराष्ट्रायवकांना नवकल्पना,घोडवेउज्ज्वल भविष्यसाठीप्रेरितकरणे।
+          {t("youth")}
         </h2>
 
       </div>
@@ -518,14 +509,14 @@ export default function Home() {
           text-4xl sm:text-5xl md:text-7xl lg:text-9xl 
           font-black leading-[1.1]
         ">
-          सर्व्र्चा आवाज
+          {t("hero_line1")}
         </h2>
 
         <h2 className="
           text-4xl sm:text-5xl md:text-7xl lg:text-9xl 
           font-black leading-[1.1]
         ">
-          एकत्र
+          {t("hero_line2")}
         </h2>
       </div>
 
@@ -535,7 +526,7 @@ export default function Home() {
           src="/contact.png"
           alt=""
           className="
-            w-[60%] sm:w-[70%] 
+            w-[80%] sm:w-[70%] 
             max-w-[260px] sm:max-w-[340px] 
             md:max-w-[600px] lg:max-w-[700px]
             object-contain
